@@ -1,0 +1,9 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.sln filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*dylib filter=lfs diff=lfs merge=lfs -text
+*xa0 filter=lfs diff=lfs merge=lfs -text
+*.xa0 filter=lfs diff=lfs merge=lfs -text
+*.VSIDX filter=lfs diff=lfs merge=lfs -text
