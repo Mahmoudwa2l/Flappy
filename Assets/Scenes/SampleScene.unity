@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290d88029ac7f7d40ab3876a6b0efb89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 3021068045974733088, guid: 33441a555a33e7f4b9c2574b93bf9523, type: 3}
   spawnRate: 2
   minHeight: 0
   maxHeight: 1
@@ -537,6 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d4f028e0a69b748b24016fdd1e0c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  connectionPort: 25001
   sprites:
   - {fileID: 21300000, guid: 06216374452efd0499aa2a449f5811fb, type: 3}
   - {fileID: 21300000, guid: 2cb33d14e8e6a064d9d381df34733a60, type: 3}
