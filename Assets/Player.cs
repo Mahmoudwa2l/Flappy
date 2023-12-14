@@ -105,9 +105,9 @@ public class Player : MonoBehaviour
         InvokeRepeating(nameof(AnimateSprite), 0.15f, 0.15f);
 
         // Receive on a separate thread so Unity doesn't freeze waiting for data **
-        //ThreadStart ts = new ThreadStart(GetData);
-        //thread = new Thread(ts);
-        //thread.Start();
+        ThreadStart ts = new ThreadStart(GetData);
+        thread = new Thread(ts);
+        thread.Start();
     }
 
     private void OnEnable()
@@ -127,16 +127,16 @@ public class Player : MonoBehaviour
 
 
         // Set this object's position in the scene according to the position received **
-        //transform.position = position;
+        transform.position = position;
 
         // Apply gravity and update the position
-        direction.y += gravity * Time.deltaTime;
-        transform.position += direction * Time.deltaTime;
+        //direction.y += gravity * Time.deltaTime;
+        //transform.position += direction * Time.deltaTime;
 
         // Tilt the bird based on the direction
-        Vector3 rotation = transform.eulerAngles;
-        rotation.z = direction.y * tilt;
-        transform.eulerAngles = rotation;
+        //Vector3 rotation = transform.eulerAngles;
+        //rotation.z = direction.y * tilt;
+        //transform.eulerAngles = rotation;
     }
 
     private void AnimateSprite()
